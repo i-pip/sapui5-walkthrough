@@ -33,10 +33,10 @@ sap.ui.define([
 			this._helloDialog = new HelloDialog(this.getRootControl());
 			
 			// set i18n model
-			// var i18nModel = new ResourceModel({
-			// 	bundleName: "sap.ui.demo.walkthrough.i18n.i18n"
-			// });
-			// this.setModel(i18nModel, "i18n");
+			var i18nModel = new ResourceModel({
+				bundleName: "sap.ui.demo.walkthrough.i18n.i18n"
+			});
+			this.setModel(i18nModel, "i18n");
 		},
 		
 		exit: function() {
