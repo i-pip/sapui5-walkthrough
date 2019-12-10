@@ -13,7 +13,7 @@
 				text="{i18n>openDialogButtonText}"
 				press=".onOpenDialog"
 				class="sapUiSmallMarginEnd"
-				icon="sap-icon://world"
+				icon="sap-icon://world "
 			/>
 			<Button
 				text="{i18n>showHelloButtonText}"
