@@ -6,7 +6,16 @@
 		"i18n": "i18n/i18n.properties",
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
-		"applicationVersion": {"version": "1.0.0"}
+		"applicationVersion": {"version": "1.0.0"},
+		"dataSources": {
+			"invoiceRemote": {
+				"uri": "/destinations/northwind/v2/Northwind/Northwind.svc/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0"
+				}
+			}
+		}
 	},
 	"sap.ui": {
 		"technology": "UI5",
@@ -37,11 +46,7 @@
 				}
 			},
 			"invoice": {
-				"type": "sap.ui.model.json.JSONModel",
-				"settings": {
-					"bundleName": "sap.ui.demo.walkthrough.Invoices"
-				},
-				"uri": "./Invoices.json"
+				"dataSource": "invoiceRemote"
 			}
 		},
 		"resources": {
